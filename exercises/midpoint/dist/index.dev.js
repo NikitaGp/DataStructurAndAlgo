@@ -1,3 +1,5 @@
+"use strict";
+
 // --- Directions
 // Return the 'middle' node of a linked list.
 // If the list has an even number of elements, return
@@ -12,16 +14,16 @@
 // l.insertLast('c')
 // midpoint(l); // returns { data: 'b' }
 // const LinkedList = require('./linkedlist').LinkedList;
-
-
 function midpoint(list) {
-    let slow = list.head;
-    let fast = list.head;
-    while(fast.next && fast.next.next) {
-        slow = slow.next;
-        fast = fast.next.next;
-    }
-    return slow;
+  var slow = list.head;
+  var fast = list.head;
+
+  while (fast.next && fast.next.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return slow;
 }
 
 module.exports = midpoint;

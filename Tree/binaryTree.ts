@@ -65,7 +65,7 @@ bn.insert(18);
 bn.insert(2);
 bn.insert(3);
 bn.insert(12);
-console.log(bn.root)
+console.log(bn.root) 
 bn.printPreOrder();
 bn.printPostOrder();
 bn.printInOrder();

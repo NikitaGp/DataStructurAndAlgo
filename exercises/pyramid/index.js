@@ -14,6 +14,20 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+    let column = n*2-1;
+    var midpoint = Math.floor(column/2)
+    for(let row = 0; row < n; row++) {
+       let starCount = '';
+        for (let col = 0 ; col < column; col++) {
+          if(midpoint - row <= col && midpoint + row >= col ) {
+            starCount += '#';
+          } else {
+            starCount += ' ';
+          }
+        }
+        console.log(starCount);
+    }
+}
 
 module.exports = pyramid;

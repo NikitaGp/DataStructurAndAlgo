@@ -17,15 +17,29 @@
 //       '### '
 //       '####'
 
+// function steps(n) {
+//     let result = ''
+//     for(let i =0; i < n;i++) {
+//         let spaceResult = ''
+//         result += '#'
+//        for (var space = n -1-i; space > 0; space--) {
+//         spaceResult += ' '
+//        }
+//        console.log (result + spaceResult);
+//     }
+// }
 function steps(n) {
-    let result = ''
-    for(let i =0; i < n;i++) {
-        let spaceResult = ''
-        result += '#'
-       for (var space = n -1-i; space > 0; space--) {
-        spaceResult += ' '
+   
+    for(var row =0; row < n; row++) {
+        var step = '';
+       for (var column = 0 ; column < n; column++) {
+         if (row <= column) {
+            step += '#';
+         } else {
+             step += ' ';
+         }
        }
-       console.log (result + spaceResult);
+       console.log (step);
     }
 }
 

@@ -1,3 +1,5 @@
+"use strict";
+
 // --- Directions
 // Given a linked list, return the element n spaces
 // from the last node in the list.  Do not call the 'size'
@@ -10,20 +12,21 @@
 //    list.insertLast('c');
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
-
 function fromLast(list, n) {
-    if (!list.head) {
-        return null;
+  if (!list.head) {
+    return null;
+  }
+
+  var slow = list.head;
+  var fast = list.head;
+
+  while (fast) {
+    slow = slow.next;
+
+    for (var i = 0; i < n; i++) {
+      fast = fast.next;
     }
-    let slow = list.head;
-    let fast = list.head;
-    while(fast) {
-        slow = slow.next;
-        for (let i = 0; i < n; i++) {
-            fast = fast.next;
-           
-        }
-    }
+  }
 }
 
 module.exports = fromLast;
