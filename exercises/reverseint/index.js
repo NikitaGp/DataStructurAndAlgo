@@ -20,7 +20,7 @@ function reverseInt(n1) {
        return reverseInt1(n,reverse)
     }
     
-   retrun reverseInt1(n1, 0);
+   return reverseInt1(n1, 0);
 }
 
 module.exports = reverseInt;
