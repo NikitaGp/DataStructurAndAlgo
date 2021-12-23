@@ -48,7 +48,7 @@ class LinkedList {
   }
 
   insertAt(data, index) {
-    if (!this.head) {
+     if (!this.head) {
       this.head = new Node(data);
       return;
     }

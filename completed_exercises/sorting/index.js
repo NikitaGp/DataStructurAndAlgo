@@ -4,6 +4,7 @@
 function bubbleSort(arr) {
   // Implement bubblesort
   for (let i = 0; i < arr.length; i++) {
+    // we are doing like arr.length-i-1 coz last element is sorted and is the heighest element in the array
     for (let j = 0; j < (arr.length - i - 1); j++) {
       if (arr[j] > arr[j+1]) {
         const lesser = arr[j+1];
