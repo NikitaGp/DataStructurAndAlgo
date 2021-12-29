@@ -24,6 +24,7 @@ class LinkedList {
         }
     }
     insertLast(data) {
+        
         const node = new Node();
         if (this.head === null) {
             this.head = new Node(data);
