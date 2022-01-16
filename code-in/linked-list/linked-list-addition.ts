@@ -1,4 +1,4 @@
-import { Node, LinkedList } from "../exercises/linkedlist";
+import { Node, LinkedList } from "../../exercises/linkedlist";
 
  function additionLinkedList (l1 , l2, carry: number) {
     if (l1 == null && l2 == null && carry == 0) {
